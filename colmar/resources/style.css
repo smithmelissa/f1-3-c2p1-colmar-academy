@@ -1,0 +1,454 @@
+
+body {
+  font-size: 16px;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  background-color: #a1e5f1;
+}
+
+a {
+  color: #494949;
+}
+
+a:hover {
+  color: #059499;
+  }
+
+.header {
+  width: 100%;
+  height: 64px;
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#mobile-header {
+  display: none;
+}
+
+.logo {
+  padding-left: 24px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.logo span {
+  color: rgb(0, 188, 202);
+  font-size: 24px;
+  letter-spacing: 2px;
+  padding-left: 5px;
+}
+
+.desktop-header {
+  font-size: 18px;
+}
+
+.desktop-header a {
+  padding-right: 24px;
+}
+
+/* Hero Section */
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.hero {
+max-width: 60%;
+height: 600px;
+margin-top: 64px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.hero img {
+  width: 60%;
+margin: 32px 24px;
+}
+
+.hero-text {
+display: flex;
+flex-direction: column;
+margin-left: 24px;
+}
+
+.hero-text h1 {
+font-size: 32px;
+}
+
+.button {
+margin-top: 30px;
+color: white;
+background-color: black;
+border-radius: 5px;
+text-align: center;
+padding: 10px 80px;
+transition: color 350ms ease-in;
+}
+
+.button:hover {
+background-color: #327386;
+}
+
+
+
+/* Highlights Section */
+
+.highlights {
+width: 100%;
+padding-bottom: 24px;
+display: flex;
+justify-content: center;
+background-color: #ececec;
+}
+
+.practice {
+  display: flex;
+  flex-direction: column;
+  margin: 32px 24px;
+  width: 30%;
+}
+
+.practice img {
+    width: 100%;
+}
+
+.practice h1 {
+margin-top: 32px;
+color: rgb(0, 188, 202);
+font-size: 32px;
+}
+
+
+.practice span p {
+margin-top: 24px;
+margin-bottom: 32px;
+}
+
+.ticker {
+margin-top: 24px;
+display: flex;
+flex-direction: column;
+margin-left: 24px;
+width: 30%;
+  
+}
+
+.ticker h3 {
+font-size: 20px;
+}
+
+.section {
+display: flex;
+align-items: center;
+}
+
+.section img {
+width: 35%;
+height: 35%;
+margin: 16px;
+}
+
+#mobileimg {
+display: none !important;
+}
+
+.text {
+display: flex;
+flex-direction: column;
+justify-content: center;
+flex-wrap: wrap;
+width: 65%;
+padding-left: 16px;
+line-height: 1.6;
+}
+
+.text span {
+padding-bottom: 16px;
+}
+
+.text a {
+padding-bottom: 30px;
+text-decoration: none;
+}
+
+.text a:hover {
+text-decoration: underline;
+}
+
+/* Start Learning Section */
+
+.startlearn p {
+ padding: 0px 5px;
+}
+
+.course {
+margin-bottom: 48px;
+}
+
+.course h1, .thesis h1 {
+margin: 32px 0;
+text-align: center;
+font-size: 32px;
+}
+
+.row1, .row2 {
+display: flex;
+justify-content: center;
+margin-bottom: 48px;
+}
+
+.left, .middle, .right {
+width: 20%;
+background-color: white;
+text-align: center;
+line-height: 1.3;
+box-shadow: 0 1px 2px 0 rgb(78, 78, 78);
+padding-bottom: 16px;
+}
+
+.left {
+margin-left: 72px;
+}
+
+.right {
+margin-right: 72px;
+}
+
+.middle {
+margin: 0 24px;
+}
+
+.course img {
+height: auto;
+width: 100%;
+}
+
+.left h3, .middle h3, .right h3 {
+  margin-top: 16px;
+  font-size: 20px;
+}
+
+.left span, .span p {
+  margin: 8px 0px;
+}
+
+.row2 {
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: wrap;
+}
+
+.left:hover, .middle:hover, .right:hover, .section:hover {
+  background-color: #c0c0c0;
+}
+
+/* Thesis */
+
+.thesis {
+  padding: 10px 0px;
+  background-color: #ececec;
+}
+
+.video {
+  height: auto;
+  width: 100%;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 64px;
+  color: rgb(80, 80, 80);
+}
+
+.footer span {
+  padding-left: 200px;
+}
+
+.footer nav {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right: 180px;
+}
+
+.footer nav a {
+  padding-right: 16px;
+}
+
+
+/* Responsive */
+
+@media only screen and (max-width: 824px) {
+
+
+  #mobile-header {
+    display: flex;
+    width: 25%;
+    height: 50%;
+  }
+
+  .desktop-header, .logo {
+    display: none;
+  }
+
+  .button {
+    margin: 12px auto 4px;
+  }
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+    max-height: 650px;
+    align-content: top;
+    }
+
+  #hero h1 {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+  }
+
+  .hero img {
+    margin: 0;
+    width: auto;
+    max-width: 100%;
+    max-height: 390px;
+    display: flex;
+    
+    flex-direction: column;
+  }
+
+  .hero h1 h3 {
+  font-size: 32px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  }
+
+
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .highlights {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-height: 600px;
+      padding-bottom: 40px;
+      margin-bottom: 20px;
+    
+  }
+
+  .practice {
+    margin: 0;
+    width: auto;
+    max-width: 100%;
+    max-height: 390px;
+    display: flex;
+  }
+
+  .practice.guy {
+    display: none;
+  }
+
+  .practice thesis span {
+    height: 100px;
+  }
+
+.left span {
+ display: none;
+}
+
+.startlearn img{
+  display: none;
+}
+
+.startlearn p {
+  display: none;
+}
+
+.startlearn span{
+  display: none;
+}
+
+  .practice thesis {
+    padding-top: 100px;
+    max-height: 2000px;
+
+  }
+
+  .section.thesis {
+    display: none;
+  }
+
+  .ticker {
+    width: 90%;
+  }
+
+  .text {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .thesis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 16px;
+    }
+
+    .thesis h1 {
+      height: 120px;
+    }
+
+  .footer {
+   display: flex;
+   flex-direction: row;
+  }
+
+  .left, .middle, .right {
+    padding-bottom: 0px;
+    }
+
+    .row1 {
+      margin-bottom: 10px; 
+    }
+
+
+  .footer span {
+    padding-left: 20px;
+   }
+
+.footer nav {
+  padding-right: 20px; 
+}
+
+}
